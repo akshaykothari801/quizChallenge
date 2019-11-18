@@ -1,0 +1,35 @@
+.answer-item {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    /*height: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-item:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.display-correct span {
+    font-size: 32px;
+    color: black;
+    font-weight: 500;
+}
+
+.wrong.answer-item {
+    border: 1px solid indianred;
+    background-color: indianred;
+    color: #fff;
+}
+
+.right.answer-item {
+    border: 1px solid green;
+    background-color: green;
+    color: #fff;
+}

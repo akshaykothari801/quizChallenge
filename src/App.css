@@ -1,33 +1,93 @@
-.App {
-  text-align: center;
+.main-que {
+    border: 8px solid #e3e3e3;
+    width: 70%;
+    height: 100vh;
+    overflow: auto;
+    margin: auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.main-que-section {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 20px);
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-que .process-bar .progress {
+    border-radius: 0;
+    background-color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.main-que .process-bar .progress-bar {
+    background-color: #a8a9a8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-que .score-bar {
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+.question-display {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#question {
+    margin: 20px 0;
+}
+
+.question-tag {
+    font-weight: 600;
+}
+
+.score-bar-status {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.score-bar-status p {
+    margin-bottom: 0;
+}
+
+.score-bar .progress {
+    border: 1px solid black;
+}
+
+.score-bar .max-score .progress .progress-bar:first-child {
+    background-color: black;
+}
+
+.score-bar .max-score .progress .progress-bar:nth-child(2n) {
+    background-color: #717171;
+}
+
+.score-bar .max-score .progress .progress-bar:last-child {
+    background-color: #d2d2d2;
+}
+
+.score-bar .progress:last-child {
+    background-color: #ffffff;
+}
+
+.category-wrapper {
+    font-size: 14px;
+}
+
+.next-btn {
+    background-color: #e5e6e5 !important;
+    border: 1px solid black !important;
+    color: black !important;
+}
+
+.next-btn:hover {
+    background-color: black !important;
+    border: 1px solid black !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 767px) {
+    .main-que {
+        width: 100%;
+    }
 }
